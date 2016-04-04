@@ -16,7 +16,8 @@ body {
 
 .map {
   position: absolute;
-  left: 440px;
+  left: 0;
+  /*left: 440px;*/
   right: 0;
   bottom: 0;
   top: 50px;
@@ -29,8 +30,9 @@ body {
   top: 50px;
   bottom: 0;
   padding: 20px;
-  overflow: hidden;
-  overflow-y: auto;
+  /*overflow: hidden;
+  overflow-y: auto;*/
+  visibility: hidden;
 }
 
 #toggle-sidebar {
@@ -43,12 +45,24 @@ body {
   border: 0;
   color: #fff;
   display: block;
+  visibility: hidden;
+}
+
+.sidebar-open .sidebar{
+    width: 100%;
+    visibility: visible;
+}
+
+.sidebar-open .map{
+    visibility: hidden;
 }
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
-
+    .sidebar{background-color:red;}
 }
 
 @media screen and (max-width: 479px) {
-
+    .sidebar{visibility: hidden;}
+    .map{left:0;}
+    #toggle-sidebar{visibility: visible;}
 }

@@ -19,13 +19,13 @@ Your prototype must contain all three of the following components:
 
 Your prototype must contain your choice of five of the following components.
 
-- Table
+- Table @
 - Input Group
-- Button Group
-- Glyph Icon
+- Button Group @
+- Glyph Icon @
 - Label
-- Alert
-- Tooltip
+- Alert @
+- Tooltip @
 
 ### Stretch Goal
 
